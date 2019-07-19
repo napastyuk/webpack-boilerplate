@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack",
     "build": "webpack -d",
     "prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +13,7 @@
   "author": "Ilya Napastyuk <napastyuk@gmail.com> (napastyuk.github.io)",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
   }
