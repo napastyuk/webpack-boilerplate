@@ -13,7 +13,10 @@
   "author": "Ilya Napastyuk <napastyuk@gmail.com> (napastyuk.github.io)",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
   }
