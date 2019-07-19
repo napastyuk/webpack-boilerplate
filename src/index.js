@@ -1,3 +1,5 @@
-import css from './style.css';
+import './style.css';
 
-console.log("Hello world");
+jQuery(document).ready(function () {
+    $(this).css('background-color','orange');
+});

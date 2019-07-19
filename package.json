@@ -19,5 +19,9 @@
     "mini-css-extract-plugin": "^0.8.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   }
 }
