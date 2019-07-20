@@ -1,6 +1,6 @@
 // @import "~bootstrap/scss/bootstrap"; //подключаем все стили разом из node_modules
 @import "./bootstrap/bootstap"; //либо воспользуемся файлом bootstap.scss что бы выбирать модули
 
-h1 {
-    background-color: yellow;
+body {
+    background-image:url("./img/screen.png");
 }

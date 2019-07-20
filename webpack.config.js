@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
@@ -20,9 +20,9 @@ module.exports = {
             filename: 'style.css',
         }),
         new CleanWebpackPlugin(),
-        new webpack.ProvidePlugin({ //импортируем jquery напямую в webpack
-            '$':'jquery',
-            'jQuery':'jquery',
+        new webpack.ProvidePlugin({ //импортируем jquery напрямую в webpack
+            '$': 'jquery',
+            'jQuery': 'jquery',
             'window.jquery': 'jquery'
         }),
         new OptimizeCssAssetsPlugin({
@@ -42,6 +42,26 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     "sass-loader"
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[folder]/[name].[ext]',
+                            outputPath: './'
+                        },
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            optipng: {
+                                enabled: true,
+                            },
+                        }
+                    }
                 ]
             }
             // {
