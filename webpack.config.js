@@ -28,14 +28,22 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    'css-loader'
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader"
                 ]
             }
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         {
+            //             loader: MiniCssExtractPlugin.loader
+            //         },
+            //         'css-loader'
+            //     ]
+            // }
         ]
     }
 }
