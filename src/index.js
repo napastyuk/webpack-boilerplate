@@ -3,5 +3,5 @@ import './style.scss'; //подключение css должно быть до j
 import './bootstrap/bootstrap.js';
 
 jQuery(document).ready(function () {
-    $(this).css('background-color','orange');
+    $(this).css('background-color','red');
 });

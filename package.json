@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "build": "webpack -d",
-    "prod": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --debug --devtool cheap-module-eval-source-map --output-pathinfo",
+    "watch": "webpack --debug --devtool cheap-module-eval-source-map --output-pathinfo --watch",
+    "prod": "webpack --optimize-minimize --define process.env.NODE_ENV='production'" 
   },
   "keywords": [],
   "author": "Ilya Napastyuk <napastyuk@gmail.com> (napastyuk.github.io)",
